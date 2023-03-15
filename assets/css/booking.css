@@ -1,0 +1,224 @@
+.booking {
+    height: 100vh;
+}
+
+.booking__wrapper {
+    border-top: 40px solid var(--main-color);
+    padding: 27px 15px 23px 15px;
+}
+
+.booking__form-item {
+    position: relative;
+}
+
+.booking__form-item input {
+    width: 100%;
+    outline: none;
+    padding-left: 32px;
+    height: 64px;
+    border: none;
+}
+
+.booking__form-item .floating-label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 32px;
+    transition: 0.2s ease all;
+    color: var(--main-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.booking__form-item input:focus ~ .floating-label,
+.booking__form-item input:not(:focus):valid ~ .floating-label{
+    top: 20px;
+    left: 32px;
+    font-size: 14px;
+    opacity: 1;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.booking__form-items {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.booking__form-items.-date {
+    position: relative;
+    height: 72px;
+}
+
+.booking__form-item.-date input {
+    padding: 0;
+}
+
+.booking__form-quickdate {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 24px;
+    gap: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.booking__form-quickdate a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #5D686E;
+    border: 1px solid #5D686E;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border-radius: 2px;
+}
+
+.booking__form-item.-date input {
+    height: 72px;
+}
+
+.booking__form-button {
+    max-width: 208px;
+    width: 100%;
+    margin: auto;
+}
+
+.booking__form-button button {
+    width: 100%;
+    background: var(--main-color);
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding: 11px 0;
+}
+
+.booking__form-quickdate a.active {
+    color: white;
+    background: #5d686e;
+}
+
+.booking__content {
+    font-size: 12px;
+    background: white;
+    padding: 13px 24px 34px 29px;
+}
+
+.booking-list__header {
+    background: var(--main-color);
+    text-align: center;
+    position: relative;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.booking-list__header>span {
+    position: absolute;
+    left: 8px;
+    color: white;
+}
+
+.booking-list__destination {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.booking-list__date {
+    font-size: 12px;
+}
+
+.booking-list__items {
+    background: #ececec;
+    margin: 8px;
+    border-radius: 4px;
+    border: 1px solid #B4B4B4;
+}
+
+.booking-list__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 6px;
+}
+
+.booking-list__item-time {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.departure>span {
+    font-size: 9px;
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.departure>div {
+    font-size: 14px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.booking-list__price {
+    color: white;
+    background: #D23B38;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.booking-list__item {
+    padding: 8px;
+}
+
+.booking-list__item-info {
+    font-size: 12px;
+    color: var(--main-color);
+    font-weight: 500;
+}
+.booking__form-item_swap {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.booking__form-item_swap button {
+    background: transparent;
+    border: 1px solid #707070;
+    font-size: 12px;
+    border-radius: 50%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.booking__form-item_filtered {
+    list-style: none;
+    padding: 0;
+    background: white;
+    padding-top: 5px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding-bottom: 5px;
+    bottom: -70px;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+ul.booking__form-item_filtered li {
+    color: var(--main-color);
+    font-weight: 500;
+    padding:5px;
+    font-size: 14px;
+}
+
+ul.booking__form-item_filtered li:hover {
+    background: #f8f8f8;
+}

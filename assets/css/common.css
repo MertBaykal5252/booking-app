@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "booking.css";
+@import "floating-label.css";
+@import "datepicker.css";
+:root {
+    --main-color: #2F4EB4;
+    --secondary-color: #d23b38;
+}
+
+html,body {
+    background: #F8F8F8;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
